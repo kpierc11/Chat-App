@@ -7,30 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="LayoutRoot" Background="white">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width=".5*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="7.5*"/>
-        </Grid.ColumnDefinitions>
+    <NavigationView x:Name="nvSample">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Icon="Play" Content="Alerts" Tag="SamplePage1" />
+            <NavigationViewItem Icon="Message" Content="Messages" Tag="SamplePage2" />
+            <NavigationViewItem Icon="Refresh" Content="Menu Item3" Tag="SamplePage3" />
+            <NavigationViewItem Icon="Download" Content="Menu Item4" Tag="SamplePage4" />
+        </NavigationView.MenuItems>
+        <Frame x:Name="contentFrame">
+            <StackPanel Name="SamplePage1" Orientation="Vertical">
+                <Rectangle Fill="Red"/>
+                <Rectangle Fill="Blue"/>
+                <Rectangle Fill="Green"/>
+                <Rectangle Fill="Yellow"/>
+            </StackPanel>
+        </Frame>
+    </NavigationView>
 
-        <StackPanel Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0">
-            <Button Name="ImageExample2">
-                <ImageIcon Source="https://raw.githubusercontent.com/DiemenDesign/LibreICONS/master/svg-color/libre-camera-panorama.svg" Width="50"/>
-            </Button>
-            <Button Name="ImageExample4">
-                <ImageIcon Source="https://raw.githubusercontent.com/DiemenDesign/LibreICONS/master/svg-color/libre-camera-panorama.svg" Width="50"/>
-            </Button>
-        </StackPanel>
-
-        <StackPanel Grid.Column="1">
-            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
-            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
-            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
-            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
-        </StackPanel>
-
-       
-        <Rectangle Fill="Orange" Grid.Column="2" Height="100" Margin="5"/>
-    </Grid>
 </Window>
