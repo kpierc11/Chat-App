@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Window
     x:Class="ChatApp.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -8,8 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBox Header="Enter your name:" PlaceholderText="Name" />
-    </StackPanel>
-   
+    <Grid x:Name="LayoutRoot" Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="7.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,1,0">
+            <Button Name="ImageExample2">
+                <ImageIcon Source="https://raw.githubusercontent.com/DiemenDesign/LibreICONS/master/svg-color/libre-camera-panorama.svg" Width="50"/>
+            </Button>
+            <Button Name="ImageExample4">
+                <ImageIcon Source="https://raw.githubusercontent.com/DiemenDesign/LibreICONS/master/svg-color/libre-camera-panorama.svg" Width="50"/>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
+            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
+            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
+            <PersonPicture ProfilePicture="https://learn.microsoft.com/windows/uwp/contacts-and-calendar/images/shoulder-tap-static-payload.png" />
+        </StackPanel>
+
+       
+        <Rectangle Fill="Orange" Grid.Column="2" Height="100" Margin="5"/>
+    </Grid>
 </Window>
