@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\app\\app.csproj": {}
+    "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\server\\server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\app\\app.csproj": {
+    "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\app\\app.csproj",
-        "projectName": "app",
-        "projectPath": "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\app\\app.csproj",
+        "projectUniqueName": "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\server\\server.csproj",
+        "projectName": "server",
+        "projectPath": "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\server\\server.csproj",
         "packagesPath": "C:\\Users\\Kaleb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\app\\obj\\",
+        "outputPath": "C:\\Users\\Kaleb\\Documents\\GitHub\\Chat-App\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
